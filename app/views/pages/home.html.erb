@@ -1,8 +1,103 @@
 <%= render 'shared/header' %>
 
 
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+        <%= image_tag "fan6.jpg" %>
+
+      <div class="carousel-caption">
+        <h3>自分だけの小さなファン倶楽部を作ろう。</h3>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag "fan3.jpg" %>
+      <div class="carousel-caption">
+        <h3>ファンのために自分のために。</h3>
+
+      </div>
+    </div>
+
+    <div class="item">
+      <%= image_tag "fan5.jpg" %>
+      <div class="carousel-caption">
+        <h3>歌、ライブ、歌詞、グッズをファンのために提供しよう。</h3>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+<div class="container">
+  <div class="home-title">
+    <h2><%= fa_icon "space-shuttle" %>新着グループ</h2>
+
+  </div>
+
+    <div class="row home-new-wrapper">
+
+      <div class="col-md-4 home-new-contents">
+        <%= link_to image_tag("fan.jpg" , :class => "img-thumbnail") %>
+
+      </div>
+
+      <div class="col-md-4 home-new-contents">
+        <%= link_to image_tag("fan.jpg" , :class => "img-thumbnail") %>
+
+      </div>
+
+      <div class="col-md-4 home-new-contents">
+        <%= link_to image_tag("fan.jpg" , :class => "img-thumbnail") %>
+
+      </div>
+
+      <div class="col-md-4 home-new-contents">
+        <%= link_to image_tag("fan.jpg" , :class => "img-thumbnail") %>
+
+      </div>
+
+      <div class="col-md-4 home-new-contents">
+        <%= link_to image_tag("fan.jpg" , :class => "img-thumbnail") %>
+
+      </div>
+
+      <div class="col-md-4 home-new-contents">
+        <%= link_to image_tag("fan.jpg" , :class => "img-thumbnail") %>
+
+      </div>
+
+      <div class="col-md-4 home-new-contents">
+        <%= link_to image_tag("fan.jpg" , :class => "img-thumbnail") %>
+
+      </div>
+
+
+
+
+    </div>
+</div>
+
+
 
 
 

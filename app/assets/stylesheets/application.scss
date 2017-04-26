@@ -12,8 +12,64 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
  */
 
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+
+// _header.html.erb
+
+.navbar-default {
+    background-color: #333333;
+    border-color: #333333;
+}
+
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.container-fluid {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-brand {
+    color: #fff!important;
+}
+
+.navbar-nav {
+  a {
+    color: #fff!important;
+
+  }
+}
+
+.dropdown-menu {
+  background-color: #333;
+
+}
+.open {
+  a:hover {
+    background-color: #333!important;
+  }
+  a:focus {
+    background-color: #333!important;
+
+  }
+}
+
+
+// _footer.html.erb
+
+footer {
+  background-color: #333;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  margin-top: 70px;
+}
